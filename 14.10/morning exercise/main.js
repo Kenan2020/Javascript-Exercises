@@ -1,11 +1,20 @@
-function visited (city, arr){
-    for(let i=0; i<arr.length; i++){
-        if(city==arr[i]){
-            return `I visited ${city}`;
+function matched (arrChecked, arrVisited){
+    let tmp=[];
+    for(let i=0; i<arrChecked.length; i++){
+        for(let j=0; j<arrVisited.length; j++){
+            if(arrChecked[i] == arrVisited[j]){
+                tmp.push(arrChecked[i]);
+            }
         }
     }
-        return `I didn't visit ${city} yet`;
+    if(tmp.length == 0){
+        return `There is no match`;
+    }else{
+        return tmp;
     }
-arr=["Hamburg", "Bremen", "Lübek", "Rostock"]
-let city = visited ("München", arr);
-console.log(city)
+}
+
+let arr1 = ["Hamburg", "Bremen", "Lübek", "Rostock", "Wien", "Frankfurt"];
+let arr2 = ["Rostock", "München", "Kiel", "Hamburg"];
+let matchedCities = matched (arr1, arr2);
+console.log(`Matched Cities = [${matchedCities}]`);
