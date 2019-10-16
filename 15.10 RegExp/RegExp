@@ -1,0 +1,23 @@
+- RegExp. (Regular Expressions):
+--------------------------------
+used to search or validate a text
+
+1- Pattern: let re = /hello/
+
+2- Modifier:
+	- i: case-insensitive matching.
+	- ^: begining with 
+	- $: end with
+	- .: matches ONE character
+	- *:
+	- ?: optional character
+	- \: Escape character
+
+
+syntax: /pattern/modifiers;
+
+functions:
+------------
+.exec() return result in an array or null.
+
+
