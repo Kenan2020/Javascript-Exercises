@@ -1,5 +1,5 @@
 function ponus(){
-    let sum =0;
+    let sum = 0;
 
     for (let i = 0; i < 100; i++){
         let userNum = Math.floor(Math.random()*100 + 1);
@@ -12,25 +12,29 @@ function ponus(){
 The user number: ${userNum}
 the luck number: ${luckyNum}
 The user wins 100$
-Total: ${sum += 100}$`)
+Total: ${sum += 100}$
+---------------------------------`)
 
         }else if(x <= 10){
             console.log(`for the loop number: ${i}
 The user number: ${userNum}
 the luck number: ${luckyNum}
 The user wins ${100 - x * 10}$
-Total: ${sum +=(100 - x * 10)}$`)
+Total: ${sum +=(100 - x * 10)}$
+---------------------------------`)
 
         }else{
         console.log(`for the loop number: ${i}
 The user number: ${userNum}
 the luck number: ${luckyNum}
 The user wins nothing
-Total: ${sum += 0}$`)
+Total: ${sum += 0}$
+---------------------------------`)
 
         }
     }
-    return `The Total is: ${sum} $`
+    return `The Total is: ${sum} $
+---------------------------------`
 }
 
 
