@@ -11,5 +11,5 @@ function shipment(kg){
         return `The Kilos must be greater or equal to 7`
     }
 }
-let x = shipment(8)
+let x = shipment(10)
 console.log(x)
