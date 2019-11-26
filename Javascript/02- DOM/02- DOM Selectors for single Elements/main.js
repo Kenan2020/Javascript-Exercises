@@ -1,7 +1,7 @@
 //document.getElementById("")
 /*console.log(document.getElementById("task-title"))
 
-//get things grom the element
+//get things from the element
 console.log(document.getElementById("task-title").id)
 console.log(document.getElementById("task-title").className)
 
@@ -24,6 +24,14 @@ taskTitle.innerHTML = '<span style="color:red">Task List</span>'//you can change
 //documnet.querySelector()
 console.log(document.querySelector("#task-title"))//# for id
 
-console.log(document.querySelector(".card-title"))//. for class
+//console.log(document.querySelector(".card-title"))//. for class
+
+console.log(document.querySelector("li"))//the first object
+document.querySelector("li").style.color = "red"//("ul li")
+document.querySelector("li:last-child").style.color = "blue"
+document.querySelector("li:nth-child(3)").style.color = "#777"
+document.querySelector("li:nth-child(4)").textContent = "Hello"//replace all the content
+document.querySelector("li:nth-child(even)").style.background = "#ccc"
+
 
 
