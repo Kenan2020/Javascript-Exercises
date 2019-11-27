@@ -53,5 +53,37 @@ const li2 = list.children[0]
 list.removeChild(li2)
 */
 
+//classes & attributes
+const firstLi = document.querySelector("li:first-child")
+const link = firstLi.children[0]//return elements
 
-console.log(lis[0].innerText)
+let val
+//classes
+val = link.className
+val = link.classList//DOM tokenlist
+val = link.classList[0]
+link.classList.add("test")
+link.classList.remove("test")
+val = link
+
+//attributes
+val = link.getAttribute("href")//get the value
+val = link.setAttribute("href", "http://google.com")
+/*
+let liss = document.querySelectorAll("li")
+for(i = 0; i <= liss.length ; i++){
+    if(liss[i].innerText == "done!"){
+        liss[i].children[0].setAttribute("href", "https://digitalcareerinstitute.org/")
+    }
+}
+*/
+link.setAttribute("title", "DCI")
+val = link.getAttribute("title")
+val = link.hasAttribute("title")
+link.removeAttribute("title")
+val = link.hasAttribute("title")
+
+
+
+
+console.log(val)
