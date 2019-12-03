@@ -1,7 +1,6 @@
 const clearBtn = document.querySelector(".clear-tasks")
 const card = document.querySelector(".card")
 const heading = document.querySelector("h5")
-const li = document.querySelector("li")
 const lis = document.querySelectorAll(".collection-item")
 
 //Click
@@ -39,6 +38,7 @@ const lis = document.querySelectorAll(".collection-item")
     e.preventDefault()
 }
 */
+
 for(let i=0; i < lis.length; i++){
     lis[i].addEventListener("click", runEvent)
     lis[i].addEventListener("dblclick", runEvent)
@@ -56,6 +56,4 @@ function runEvent(e){
     })
     e.preventDefault()
 }
-
-
 

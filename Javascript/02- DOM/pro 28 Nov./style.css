@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.imgbk{
+  background-color: #673AB7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 25vh;
+  z-index: -2;
+  
+}
+.imgbk1{
+  background-color:#F0EBF8;
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  top: 25vh;
+  z-index: -2;
+  
+}
+.header{
+  background-color: #F0EBF8;
+  height: 50px;
+  padding: 8px;
+}
+.card{
+  border-top: 8px solid #926cd4;
+}
