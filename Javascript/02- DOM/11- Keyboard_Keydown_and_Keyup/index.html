@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyboard control panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Keyboard control panel</h3>
+    <form>
+        <div>
+            <p class="para1">Prevent default for:</p>
+            <input type="checkbox" name="" id="chkdown">
+            <label for="">keydown</label>
+            <input type="checkbox" name="" id="chkup">
+            <label for="">keyup</label>
+        </div>
+        <div>
+            <p class="para2">Ignore:</p>
+            <input type="checkbox" name="" id="igchkdown">
+            <label for="">keydown</label>
+            <input type="checkbox" name="" id="igchkup">
+            <label for="">keyup</label>
+        </div>
+        <p>Focus on the input field and press a key.</p>
+        <input class="txt" type="text" name="" id="" placeholder="Press keys here">
+        <textarea class="txtarea" name="" id="" cols="30" rows="10"></textarea>
+        <button class="clear" type="button">Clear</button>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>

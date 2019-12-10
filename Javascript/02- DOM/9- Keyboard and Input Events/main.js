@@ -27,7 +27,8 @@ select.addEventListener("change", runEvent)
 
 //Event Handler
 function runEvent(e){
-    e.preventDefault();
-    console.log(`Event Type: ${e.type} Value: ${e.target.value}`)
-    heading.innerText = e.target.value
+    //e.preventDefault();
+    //console.log(`Event Type: ${e.type} Value: ${e.target.value}`)
+    console.log(`Event Key: ${e.key}`)
+    //heading.innerText = e.target.value
 }

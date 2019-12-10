@@ -24,7 +24,6 @@ function runEvent(e){
         case "-":
             select.insertAdjacentHTML("afterend", `<p>${parseInt(n1)-parseInt(n2)}</p>`)
             break;
-
     }
 }
 
