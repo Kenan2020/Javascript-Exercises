@@ -1,0 +1,24 @@
+{
+    "userName": "kenan",
+    "country": "germany",
+    "skills": [["HTML", "Pugjs", "Haml"], ["CSS", "Sass", "Less"], ["Javascript", "Babel"]],
+    "skillsProgress" : [
+        {
+            "HTML": "60%",
+            "Pugjs": "50%"
+        },
+        {
+            "css": "70%",
+            "Sacc":"50%"
+        }
+    ],
+    "addresses": {
+        "egypt": "Hadayaek",
+        "KSA": "Malaz",
+        "USA": "California",
+        "germany":["one", "two", "three"]
+    },
+    "age": 35,
+    "working": false,
+    "indentity": null
+}

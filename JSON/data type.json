@@ -1,0 +1,14 @@
+{
+    "userName": "kenan",
+    "country": "germany",
+    "skills": ["HTML", "CSS", "Javascript"],
+    "addresses": {
+        "egypt": "Hadayaek",
+        "KSA": "Malaz",
+        "USA": "California",
+        "germany":["one", "two", "three"]
+    },
+    "age": 35,
+    "working": false,
+    "indentity": null
+}

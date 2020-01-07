@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON</title>
+</head>
+<body>
+    
+    <script>
+        //let myJsonObject = '{"userName":"kenan", "age": 35}'
+        //let myJsObject = JSON.parse(myJsonObject)//change the data type from string to object
+
+        //console.log(myJsonObject, typeof(myJsonObject))
+        //console.log(myJsObject, typeof(myJsObject))
+
+        let myJsObject = {userName:"kenan", age: 35}
+        let myJsonObject = JSON.stringify(myJsObject)//change the data type from object to string
+
+        console.log(myJsObject, typeof(myJsObject))
+        console.log(myJsonObject, typeof(myJsonObject))
+        
+    </script>
+</body>
+</html>

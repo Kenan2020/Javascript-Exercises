@@ -17,17 +17,15 @@ function handle(e){
     "\n";
     if(area.value && Date.now() - lastTime > 250){
         area.value += new Array(80).join("-") + "\n"
-
     }
+    lastTime = Date.now()
+
+    area.value += text
+
+    if(form.elements[e.type + "Stop"].checked){
+        e.preventDefault()
+    }
+
 }
 
 // the input is an object and the key of the input is the name
-
-
-function clearFunc(){
-textarea.value=""
-text.value=""
-form.elements[e.type + "Ignore"].checked = false
-form.elements[e.type + "Stop"].checked = false
-
-}

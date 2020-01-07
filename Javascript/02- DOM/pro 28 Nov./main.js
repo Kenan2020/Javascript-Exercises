@@ -7,6 +7,7 @@ imgbk.calssName = "imgbk1"
 document.body.appendChild(imgbk1)
 */
 questions = document.querySelectorAll(".ques")// the number of questions
+console.log(questions)
 
 input = document.querySelectorAll(".form-check-input")
 

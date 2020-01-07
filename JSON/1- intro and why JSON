@@ -1,0 +1,38 @@
+	JSON
+	JavaScript Object Notation
+------------------------------------------------------------------
+
+	Intro and why JSON:
+------------------------------------------------------------------
+	- Format for sharing Data between Server and Client.
+	- Objects contains properties and its value. (key and value)
+	- JSON derived from Javascript.
+	- alternative to XML.
+	- file extention is .json
+	- MIME type is application /json.
+
+	Why JSON?
+------------------------------------------------------------------
+	- Easy to use and read.
+	- Used by most programming languages and its frameworks.
+	- You can convert JS object into JSON object.
+	- API support (Facebook, Twitter, Github)
+
+	JSON vs XML:
+------------------------------------------------------------------
+		JSON			XML
+------------------------------------------------------------------
+	- Text based format	- Markup language
+	- Light weight		- Heavier
+	- Does not used end tag	- Using tags
+	- Shorter		- Not short
+	- Can use arrays	- Can not use arrays
+	- Not support comments	- Support comments
+
+	What you need:
+------------------------------------------------------------------
+	- Javascript.
+	- What is API.
+
+//JSON Editor online
+

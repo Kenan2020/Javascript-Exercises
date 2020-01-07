@@ -1,0 +1,28 @@
+	JSON
+	Syntax and Data Type
+------------------------------------------------------------------
+
+	Syntax:
+------------------------------------------------------------------
+	- data written inside curly braces {}.
+	- data contains key => value.
+	- key and value separated by colon : // key : value
+	- key should be wrapped in double quotes // "key" : value
+	- separate data by comma(,) {"key":"value", "key":"value"}
+	- can be written in one line or multiple lines deppend on data
+	- square brackets contains arrays []
+	- curly braces containes objects {}
+
+	data type:
+------------------------------------------------------------------
+	- number
+	- string
+	- JSON object
+	- array
+	- boolean
+	- null
+
+
+
+
+
