@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Constructors and the 'this' keyword</title>
+</head>
+<body>
+    <h3>Constructors and 'this' Keyword</h3>
+    <h4>13 Jan. 2020</h4>
+    <pre>
+        function Person(name, dob){
+            this.myName = name;
+            this.dob = new Date(dob)
+            this.calAge = function(){
+                const diff = Date.now() - this.birthdate.getTime()
+                const ageDate = new Date(diff)
+                return Math.abs(ageDate.getUTCFullYear() - 1970)
+            }
+        }
+        function Animal(kind, legs){
+            this.animalKind = kind;
+            this.animalLegs = legs
+            this.calLegs = function(){
+                return this.animalLegs
+            }
+            this.changeKind = function(newKind){
+                this.animalKind = newKind
+            }
+        }
+        const trainer1 = new Person("Omar", "1975-7-25")
+
+        const animal1 = new Animal("cat", 4)
+
+        animal1.changeKind("dog")
+    </pre>
+    
+    <script src="main.js"></script>
+</body>
+</html>
