@@ -1,0 +1,19 @@
+promise = new Promise(function(resolve, reject){...})
+task#1
+---------
+using promises, create a JS function that selects a random num between [1, 50].
+if the num is larger than 35, reject the result and write an error message in the console, otherweise log the number.
+
+
+chaining promise
+task#2
+---------
+send a XMLHttpRequest to
+https://api.myjson.com/bins/11uh1e, delete the first item in the response and log the remaining data set in the console.
+
+sequencing manually
+task#3
+----------
+send a request to
+https://api.myjson.com/bins/xuvaa
+using openWeatherMap API, fetch current temperature data for all locations. Show the results only when all data is recevied

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery | DOM Manipulation</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <style>
+        body{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.5em;
+        }
+        header{
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #000;
+            margin-bottom: 10px;
+        }
+        .myClass{
+            color: blue;
+            background-color: black;
+        }
+        #container{
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>jQuery | DOM Manipulation</h1>
+    </header>
+    <div id="container">
+        <button id="btn1">Button 1</button>
+        <p class="para1">This is a paragraph.</p>
+        <p class="para2">This is another paragraph.</p>
+        <div id="myDiv">
+            <input type="text" id="newItem">
+            <ul id="list">
+                <li>List Item1</li>
+                <li>List Item2</li>
+                <li>List Item3</li>
+                <li>List Item4</li>
+            </ul>
+            <a href="http://google.com">Google</a>
+            <ul id="users"></ul>
+        </div>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            /*
+            //change first paragraph color into red
+            $(".para1").css("color", "red")
+            //add style to first paragraph
+            $(".para1").css({color: "red", backgroundColor: "#ccc"})
+            //add a class to the second paragraph
+            $(".para2").addClass("myClass")
+            //remove class of paragraph 2
+            $(".para2").removeClass("myClass")
+            //
+            $("#btn1").click(()=> {
+                $(".para2").toggleClass("myClass")
+            })
+            $("#myDiv").text("Hello World!")
+            $("#myDiv").html("<h3>Hello World!</h3>")
+            let t = $("#myDiv").text()
+            //alert(t)
+            */
+            /*
+            $("#list").append("<li>Appended List Item</li>")
+            $("#list").prepend("<li>Prepended List Item</li>")
+            $(".para1").appendTo(".para2")
+            $(".para1").prependTo(".para2")
+            */
+            /*
+            $("#list").before("<h4>Hello</h4>")
+            $("#list").after("<h4>World!</h4>")
+            $("#list").empty()
+            $("#list").detach()//like remove in vanilla JS
+            $("a").attr("target", "_blank")//set attribute
+            $("a").removeAttr("target")
+            let att = $("a").attr("href")
+            //alert(att)
+            $("p").wrap("<h1>")
+            $("p").wrapAll("<h1>")
+            */
+            /*
+            $("#newItem").keyup(e =>{
+                let code = e.which
+                if(code == 13){
+                    e.preventDefault()
+                    $("#users").append(`<li>${e.target.value}</li>`)
+                }
+            })
+            */
+            let filArr = ["Philipp", "Filiz", "Andri", "Safwan"]
+            $.each(filArr, (i, val)=>{
+                $("#users").append(`<li>${val}</li>`)
+            })
+            let newArr = $("#list li").toArray()
+            console.log(newArr)
+            $.each(newArr, (i, val)=>{
+                console.log(`${i} : ${val.innerHTML}`)
+            })
+
+
+        })
+    </script>
+</body>
+</html>

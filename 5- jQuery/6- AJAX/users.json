@@ -1,0 +1,28 @@
+[
+    {
+        "firstName":"kenan",
+        "lastName":"Ahmad",
+        "email":"kenan@gmail.com"
+    },{
+        "firstName":"Omar",
+        "lastName":"Ahmad",
+        "email":"Omar@gmail.com"
+    },{
+        "firstName":"Jack",
+        "lastName":"Ahmad",
+        "email":"Jack@gmail.com"
+    },{
+        "firstName":"Eren",
+        "lastName":"Yilmaz",
+        "email":"eren@gmail.com"
+    },{
+        "firstName":"Ali",
+        "lastName":"Ahmad",
+        "email":"Ali@gmail.com"
+    },{
+        "firstName":"Lana",
+        "lastName":"Ahmad",
+        "email":"Lana@gmail.com"
+    }
+
+]

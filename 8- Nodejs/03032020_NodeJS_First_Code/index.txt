@@ -1,0 +1,35 @@
+//console.log("Hello from FBW$!");
+//import {person} from './person' //SE6
+//const participant = require("./person")
+//const Person = require("./person") //the require() is commonJS script
+/*
+const Person = require("./user")//we can change the name
+const participant = new Person("kenan", 35)
+participant.addAuthority("admin")
+
+participant.introMe()
+
+console.log(participant);
+*/
+
+const Logger = require("./logger")
+const Message = require("./Message")
+const dciLog = new Logger()
+const message = new Message()
+
+dciLog.on("success", data => {
+    console.log("Called Listener", data)
+})
+
+dciLog.on("wrong", data => {
+    console.log("Called Listener", data)
+})
+dciLog.log("fbw3_final_presentation", "tech-error")
+dciLog.log("fbw3_final_presentation", "heroes")
+message.on("show", data => {
+    console.log("show message", data)
+})
+message.on("unshow", data => {
+    console.log("bad message", data)
+})
+message.log("Manegement is relly bad", "harishing")

@@ -1,12 +1,10 @@
-function invited (mName, gName){
-    if(mName.length == gName.length){
-        return `${gName}: you're invited!`
-    }else{
-        return `${gName}: sorry! you're not invited.`
-        }
+function isWordPlural (str){
+if(str[str.length-1]=="s"){
+    return `Plural`
+}else{
+    return `singular`
     }
-    
-    name = "kenan";
-    guest = "omaar";
-    let x = invited(name, guest);
-    console.log(x);
+}
+
+let x = isWordPlural("childern");
+console.log(x);

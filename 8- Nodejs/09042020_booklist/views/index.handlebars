@@ -1,0 +1,41 @@
+<h1 class="text-center mb-3">{{title}}</h1>
+<form action="/api/books" method="POST" class="mb-4">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" name="title" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" name="author" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="isbn">ISBN#</label>
+        <input type="text" name="isbn" class="form-control">
+    </div>
+
+    <input type="submit" value="Add" class="btn btn-primary btn-block">
+</form>
+<h4>Books</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="book-list">
+        {{#each books}}
+        <tr>
+            <td>{{this.title}}</td>
+            <td>{{this.author}}</td>
+            <td>{{this.isbn}}</td>
+            <td><a href="#">x</a></td>
+        </tr>
+        {{/each}}
+
+    </tbody>
+</table>
+
+<a href="/api/books" class="btn btn-light mt-4">Visit JSON</a>

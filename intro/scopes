@@ -1,0 +1,8 @@
+1- Global
+2- block scope using {} with let
+3- var for function scope
+-------------------------------------------------------------
+
+- var for global and function scopes
+- let for global function and block(between {}) scopes
+

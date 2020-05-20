@@ -1,0 +1,14 @@
+Redux:
+----------
+to install redux
+--------------------
+npm i redux react-redux redux-thunk
+
+
+
+import {Provider} from "react-redux"
+import store from './store' //want to create store.js
+import thunk from 'redux-thunk'
+import rootReducer from './reducers' // want to create a folder reducers
+
+

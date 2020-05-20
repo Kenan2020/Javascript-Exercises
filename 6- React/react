@@ -1,0 +1,16 @@
+stateless => function
+statefull => class
+
+state => App.jsx
+
+others jsx files are funtional and the actions handeled in App
+(every jsx file musst have his own state)
+
+variables defined in state or props for another files
+
+
+
+------------------------------------------------------
+material-ui.com (for styling react applications)
+
+
