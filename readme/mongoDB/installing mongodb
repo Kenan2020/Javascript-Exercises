@@ -1,0 +1,7 @@
+install mongodb
+----------------
+sudo apt udate // to update the system
+sudo apt install mongodb //install mongodb
+sudo systemctl status mongodb //show the status (active running)
+mongod --version //show the version
+mongo //run mongo's shell
